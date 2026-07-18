@@ -1,22 +1,36 @@
+/* Body */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    margin: 40px;
 }
+
+/* Heading */
 
 h1 {
     color: blue;
     margin-bottom: 20px;
 }
 
+/* Paragraphs */
+
 p {
     color: gray;
 }
+
+/* Sections */
 
 section {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
+
+/* Highlight */
 
 .highlight {
     color: darkgreen;
