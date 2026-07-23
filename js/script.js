@@ -1,13 +1,13 @@
-// Day 9 - JavaScript Basics
+// Day 10 - JavaScript Conditional Statements
 
 let userName = prompt("What is your name?");
+let age = Number(prompt("How old are you?"));
 
-alert("Welcome " + userName + "!");
+if (age >= 18) {
+    alert("Welcome " + userName + "! You are an adult.");
+} else {
+    alert("Sorry " + userName + ". You are under 18.");
+}
 
 console.log("User Name:", userName);
-
-let currentDay = 9;
-console.log("Bootcamp Day:", currentDay);
-
-const bootcamp = "60-Day Full-Stack Bootcamp";
-console.log(bootcamp);
+console.log("Age:", age);
