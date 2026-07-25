@@ -1,34 +1,28 @@
-// Day 11 - JavaScript Loops
+// Day 12 - Functions
 
-console.log("=== For Loop ===");
-
-for (let i = 1; i <= 10; i++) {
-    console.log("Day " + i);
+function greet(name) {
+    console.log("Welcome " + name + "!");
 }
 
-console.log("----------------");
+greet("Alazar");
+greet("Developer");
 
-console.log("=== While Loop ===");
-
-let count = 1;
-
-while (count <= 5) {
-    console.log("Count: " + count);
-    count++;
+function add(a, b) {
+    return a + b;
 }
 
-console.log("----------------");
+let total = add(10, 20);
 
-console.log("=== Countdown ===");
+console.log("Total:", total);
 
-for (let i = 10; i >= 1; i--) {
-    console.log(i);
+function square(number) {
+    return number * number;
 }
 
-console.log("----------------");
+console.log("Square of 5:", square(5));
 
-console.log("=== Even Numbers ===");
 
-for (let i = 2; i <= 20; i += 2) {
-    console.log(i);
-}
+function hi(name){
+console.log("Welcome " +name)
+};
+hi(alert =prompt("What is your name"));
