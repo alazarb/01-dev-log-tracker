@@ -1,28 +1,30 @@
-// Day 12 - Functions
+// Day 13 - Arrays
 
-function greet(name) {
-    console.log("Welcome " + name + "!");
+let skills = ["HTML", "CSS", "JavaScript"];
+
+console.log("First Skill:", skills[0]);
+
+console.log("Total Skills:", skills.length);
+
+skills.push("Git");
+skills.push("GitHub");
+
+console.log("After Push:", skills);
+
+skills.pop();
+
+console.log("After Pop:", skills);
+
+skills.unshift("Linux");
+
+console.log("After Unshift:", skills);
+
+skills.shift();
+
+console.log("After Shift:", skills);
+
+console.log("All Skills:");
+
+for (let i = 0; i < skills.length; i++) {
+    console.log(skills[i]);
 }
-
-greet("Alazar");
-greet("Developer");
-
-function add(a, b) {
-    return a + b;
-}
-
-let total = add(10, 20);
-
-console.log("Total:", total);
-
-function square(number) {
-    return number * number;
-}
-
-console.log("Square of 5:", square(5));
-
-
-function hi(name){
-console.log("Welcome " +name)
-};
-hi(alert =prompt("What is your name"));
