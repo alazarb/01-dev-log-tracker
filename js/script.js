@@ -1,30 +1,30 @@
-// Day 13 - Arrays
+// Day 14 - Objects
 
-let skills = ["HTML", "CSS", "JavaScript"];
+let developer = {
+    name: "Alazar",
+    age: 22,
+    country: "Ethiopia",
+    skills: ["HTML", "CSS", "JavaScript"]
+};
 
-console.log("First Skill:", skills[0]);
+console.log("Name:", developer.name);
 
-console.log("Total Skills:", skills.length);
+console.log("Country:", developer.country);
 
-skills.push("Git");
-skills.push("GitHub");
+developer.age = 23;
 
-console.log("After Push:", skills);
+developer.job = "Full-Stack Student";
 
-skills.pop();
+console.log(developer);
 
-console.log("After Pop:", skills);
+console.log("Skills:");
 
-skills.unshift("Linux");
+for (let i = 0; i < developer.skills.length; i++) {
+    console.log(developer.skills[i]);
+}
 
-console.log("After Unshift:", skills);
+console.log("Developer Information:");
 
-skills.shift();
-
-console.log("After Shift:", skills);
-
-console.log("All Skills:");
-
-for (let i = 0; i < skills.length; i++) {
-    console.log(skills[i]);
+for (let key in developer) {
+    console.log(key + ": " + developer[key]);
 }
