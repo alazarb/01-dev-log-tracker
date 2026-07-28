@@ -1,30 +1,35 @@
-// Day 14 - Objects
+// ================================
+// Day 15 - DOM Introduction
+// ================================
 
-let developer = {
-    name: "Alazar",
-    age: 22,
-    country: "Ethiopia",
-    skills: ["HTML", "CSS", "JavaScript"]
-};
+// Select elements
 
-console.log("Name:", developer.name);
+let title = document.getElementById("title");
+let about = document.getElementById("about-text");
+let day = document.getElementById("current-day");
+let footer = document.getElementById("footer-text");
 
-console.log("Country:", developer.country);
+// Change text
 
-developer.age = 23;
+title.textContent = "My Developer Journal";
 
-developer.job = "Full-Stack Student";
+about.textContent =
+    "I am learning Full-Stack Web Development and improving my skills every day.";
 
-console.log(developer);
+// Update progress
 
-console.log("Skills:");
+day.textContent = "Day 15 of 60";
 
-for (let i = 0; i < developer.skills.length; i++) {
-    console.log(developer.skills[i]);
-}
+// Change styles
 
-console.log("Developer Information:");
+title.style.color = "blue";
+title.style.fontSize = "42px";
 
-for (let key in developer) {
-    console.log(key + ": " + developer[key]);
-}
+day.style.color = "green";
+day.style.fontWeight = "bold";
+
+footer.style.color = "gray";
+
+// Console message
+
+console.log("Developer Journal updated successfully!");

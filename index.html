@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1>Developer Journal</h1>
+        <h1 id="title">Developer Journal</h1> <!-- NEW -->
 
         <nav>
             <a href="#">Home</a>
@@ -20,108 +20,120 @@
         </nav>
     </header>
 
+    <main>
 
-   <main>
+        <section>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am learning full-stack web development and documenting my journey.</p>
-    </section>
+            <h2>About Me</h2>
 
-    <section>
-        <h2>Current Progress</h2>
-        <p>Day 8 of 60</p>
-    </section>
+            <p id="about-text"> <!-- NEW -->
+                I am learning full-stack web development and documenting my journey.
+            </p>
 
-    <section>
-        <h2>Learning Goals</h2>
+        </section>
 
-        <ul>
-            <li>Finish the 60-Day Bootcamp</li>
-            <li>Become a Full-Stack Developer</li>
-            <li>Build 10 Portfolio Projects</li>
-            <li>Get a Software Engineering Job</li>
-        </ul>
+        <section>
 
-    </section>
+            <h2>Current Progress</h2>
 
-    <section>
+            <p id="current-day">Day 8 of 60</p> <!-- NEW -->
 
-        <h2>Skills Learned</h2>
+        </section>
 
-        <table>
+        <section>
 
-            <tr>
-                <th>Technology</th>
-                <th>Status</th>
-            </tr>
+            <h2>Learning Goals</h2>
 
-            <tr>
-                <td>Git</td>
-                <td>✅</td>
-            </tr>
+            <ul>
+                <li>Finish the 60-Day Bootcamp</li>
+                <li>Become a Full-Stack Developer</li>
+                <li>Build 10 Portfolio Projects</li>
+                <li>Get a Software Engineering Job</li>
+            </ul>
 
-            <tr>
-                <td>HTML</td>
-                <td>✅</td>
-            </tr>
+        </section>
 
-            <tr>
-                <td>CSS</td>
-                <td>✅</td>
-            </tr>
+        <section>
 
-            <tr>
-                <td>JavaScript</td>
-                <td>⏳</td>
-            </tr>
+            <h2>Skills Learned</h2>
 
-        </table>
+            <table>
 
-    </section>
+                <tr>
+                    <th>Technology</th>
+                    <th>Status</th>
+                </tr>
 
-    <section>
+                <tr>
+                    <td>Git</td>
+                    <td>✅</td>
+                </tr>
 
-        <h2>Contact Me</h2>
+                <tr>
+                    <td>HTML</td>
+                    <td>✅</td>
+                </tr>
 
-        <form>
+                <tr>
+                    <td>CSS</td>
+                    <td>✅</td>
+                </tr>
 
-            <label for="name">Name</label>
-            <input
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-                required>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>⏳</td>
+                </tr>
 
-            <label for="email">Email</label>
-            <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                required>
+            </table>
 
-            <label for="message">Message</label>
+        </section>
 
-            <textarea
-                id="message"
-                rows="5"
-                placeholder="Write your message"></textarea>
+        <section>
 
-            <button type="submit">
-                Send Message
-            </button>
+            <h2>Contact Me</h2>
 
-        </form>
+            <form>
 
-    </section>
-<script src="js/script.js"></script>
-</main>
+                <label for="name">Name</label>
 
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
 
     <footer>
-        <p>© 2026 Developer Journal</p>
+
+        <p id="footer-text">© 2026 Developer Journal</p> <!-- NEW -->
+
     </footer>
 
+    <script src="js/script.js"></script>
 
 </body>
 
