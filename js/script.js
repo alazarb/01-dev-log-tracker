@@ -49,3 +49,13 @@ let themeButton = document.getElementById("theme-btn");
 themeButton.addEventListener("click", function () {
     title.style.color = "purple";
 });
+let showButton = document.getElementById("show-info-btn");
+
+showButton.addEventListener("click", function () {
+
+    let userName = document.getElementById("name").value;
+
+    let output = document.getElementById("output");
+
+    output.textContent = "Welcome, " + userName + "!";
+});
