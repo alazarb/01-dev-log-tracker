@@ -33,3 +33,19 @@ footer.style.color = "gray";
 // Console message
 
 console.log("Developer Journal updated successfully!");
+// Button
+
+let button = document.getElementById("change-day-btn");
+
+// Event
+
+button.addEventListener("click", function () {
+
+    day.textContent = "Keep Going! 🚀";
+
+});
+let themeButton = document.getElementById("theme-btn");
+
+themeButton.addEventListener("click", function () {
+    title.style.color = "purple";
+});
