@@ -51,19 +51,31 @@ themeButton.addEventListener("click", function () {
 });
 let form = document.getElementById("contact-form");
 
+let output = document.getElementById("output");
+
 form.addEventListener("submit", function (event) {
 
     event.preventDefault();
 
     let userName = document.getElementById("name").value;
 
-    let userEmail = document.getElementById("email").value;
+    let email = document.getElementById("email").value;
 
-    let userMessage = document.getElementById("message").value;
+    if (
+        userName === "" ||
+        email === ""
+    ) {
 
-    let output = document.getElementById("output");
+        output.textContent = "Please fill all fields.";
 
-    output.textContent =
-        "Thank you, " + userName + "! Your message has been received.";
+    } else {
+
+        output.textContent =
+            "Thank you, " +
+            userName +
+            "! We will contact you at: " +
+            email;
+
+    }
 
 });
