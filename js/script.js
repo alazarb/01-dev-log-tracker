@@ -49,13 +49,21 @@ let themeButton = document.getElementById("theme-btn");
 themeButton.addEventListener("click", function () {
     title.style.color = "purple";
 });
-let showButton = document.getElementById("show-info-btn");
+let form = document.getElementById("contact-form");
 
-showButton.addEventListener("click", function () {
+form.addEventListener("submit", function (event) {
+
+    event.preventDefault();
 
     let userName = document.getElementById("name").value;
 
+    let userEmail = document.getElementById("email").value;
+
+    let userMessage = document.getElementById("message").value;
+
     let output = document.getElementById("output");
 
-    output.textContent = "Welcome, " + userName + "!";
+    output.textContent =
+        "Thank you, " + userName + "! Your message has been received.";
+
 });
