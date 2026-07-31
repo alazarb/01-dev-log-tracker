@@ -18,7 +18,7 @@ about.textContent =
 
 // Update progress
 
-day.textContent = "Day 15 of 60";
+day.textContent = "Day 18 of 60";
 
 // Change styles
 
@@ -33,22 +33,35 @@ footer.style.color = "gray";
 // Console message
 
 console.log("Developer Journal updated successfully!");
-// Button
+
+// ================================
+// Change Day Button
+// ================================
 
 let button = document.getElementById("change-day-btn");
-
-// Event
 
 button.addEventListener("click", function () {
 
     day.textContent = "Keep Going! 🚀";
 
 });
+
+// ================================
+// Change Title Color Button
+// ================================
+
 let themeButton = document.getElementById("theme-btn");
 
 themeButton.addEventListener("click", function () {
+
     title.style.color = "purple";
+
 });
+
+// ================================
+// Contact Form
+// ================================
+
 let form = document.getElementById("contact-form");
 
 let output = document.getElementById("output");
@@ -59,23 +72,60 @@ form.addEventListener("submit", function (event) {
 
     let userName = document.getElementById("name").value;
 
-    let email = document.getElementById("email").value;
+    let userEmail = document.getElementById("email").value;
+
+    let userMessage = document.getElementById("message").value;
 
     if (
         userName === "" ||
-        email === ""
+        userEmail === "" ||
+        userMessage === ""
     ) {
 
-        output.textContent = "Please fill all fields.";
+        output.textContent = "Please fill in all fields.";
 
     } else {
+
+        // Create an object
+        let user = {
+            name: userName,
+            email: userEmail,
+            message: userMessage
+        };
+
+        // Save it to Local Storage
+        localStorage.setItem(
+            "user",
+            JSON.stringify(user)
+        );
 
         output.textContent =
             "Thank you, " +
             userName +
             "! We will contact you at: " +
-            email;
+            userEmail;
 
     }
 
 });
+
+// ================================
+// Load Saved User
+// ================================
+
+let savedUser = localStorage.getItem("user");
+
+if (savedUser !== null) {
+
+    savedUser = JSON.parse(savedUser);
+
+    document.getElementById("name").value =
+        savedUser.name;
+
+    document.getElementById("email").value =
+        savedUser.email;
+
+    document.getElementById("message").value =
+        savedUser.message;
+
+}
