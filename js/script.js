@@ -129,3 +129,22 @@ if (savedUser !== null) {
         savedUser.message;
 
 }
+setTimeout(function () {
+
+    console.log("Welcome back!");
+
+}, 3000);
+setInterval(function () {
+
+    console.log("I am learning JavaScript!");
+
+}, 2000);
+let clock = document.getElementById("clock");
+
+setInterval(function () {
+
+    let now = new Date();
+
+    clock.textContent = "Time: " + now.toLocaleTimeString();
+
+}, 1000);
