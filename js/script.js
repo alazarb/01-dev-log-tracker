@@ -39,8 +39,8 @@ console.log("Developer Journal updated successfully!");
 // ================================
 
 let button = document.getElementById("change-day-btn");
-
-button.addEventListener("click", function () {
+// i used arrow functions
+button.addEventListener("click", () => {
 
     day.textContent = "Keep Going! 🚀";
 
@@ -52,7 +52,7 @@ button.addEventListener("click", function () {
 
 let themeButton = document.getElementById("theme-btn");
 
-themeButton.addEventListener("click", function () {
+themeButton.addEventListener("click", () => {
 
     title.style.color = "purple";
 
@@ -141,10 +141,12 @@ setInterval(function () {
 }, 2000);
 let clock = document.getElementById("clock");
 
-setInterval(function () {
+setInterval(() => {
 
     let now = new Date();
 
-    clock.textContent = "Time: " + now.toLocaleTimeString();
+    clock.textContent =
+    "Current Time: " +
+    now.toLocaleTimeString();
 
 }, 1000);
