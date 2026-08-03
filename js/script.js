@@ -99,11 +99,7 @@ form.addEventListener("submit", function (event) {
             JSON.stringify(user)
         );
 
-        output.textContent =
-            "Thank you, " +
-            userName +
-            "! We will contact you at: " +
-            userEmail;
+       output.textContent = `Thank you, ${userName}! We will contact you at: ${email}`;
 
     }
 
