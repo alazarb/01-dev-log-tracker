@@ -146,3 +146,28 @@ setInterval(() => {
     now.toLocaleTimeString();
 
 }, 1000);
+// ================================
+// Day 22 - Array Methods Practice
+// ================================
+
+let skills = ["HTML", "CSS", "JavaScript", "React"];
+
+// Convert skills to uppercase
+let upperSkills = skills.map(skill => skill.toUpperCase());
+
+console.log("Uppercase Skills:", upperSkills);
+
+// Find advanced skills (length > 4)
+let longSkills = skills.filter(skill => skill.length > 4);
+
+console.log("Long Skills:", longSkills);
+
+// Find React
+let reactSkill = skills.find(skill => skill === "React");
+
+console.log("Found Skill:", reactSkill);
+
+// Count total characters in all skill names
+let totalCharacters = skills.reduce((total, skill) => total + skill.length, 0);
+
+console.log("Total Characters:", totalCharacters);
